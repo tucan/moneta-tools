@@ -1,0 +1,25 @@
+{
+	"name": "moneta-tools",
+	"version": "0.1.0",
+	"description": "Tools for Moneta.ru payment system",
+	"keywords": ["moneta", "money", "payment"],
+	"main": "./lib/index",
+	"license": "MIT",
+	"author": {
+		"name": "Vladimir Andreev",
+		"email": "volodya@netfolder.ru"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/tucan/moneta-tools.git"
+	},
+	"dependencies": {
+		"moneta": "0.x"
+	},
+	"devDependencies": {
+		"coffee-script": "1.x"
+	},
+	"scripts": {
+		"prepublish": "./node_modules/.bin/coffee -c -b -o lib src"
+	}
+}
